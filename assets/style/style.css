@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --header_height: 70px;
+    --footer_height: 128px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    border: none;
+    background-color: none;
+    text-align: center;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1340px;
+    padding: 0 10px;
+}
+
+/* header */
+.header{
+    height: var(--header_height);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.header_nav{
+    height: var(--header_height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    width: 155px;
+    height: 35px;
+}
+.online_count{
+    position: relative;
+    margin-left: 64px;
+    font-size: 18px;
+    line-height: 21px;
+}
+.online_count::before{
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #8BB47D;
+}
+.coins_container{
+    align-items: center;
+}
+.coins_count{
+    display: flex;
+}
+.coins{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 7px;
+}
+.coins_purchase{
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #52719F;
+}
+/* header */
+
+/* members */
+.members{
+    padding-top: 52px;
+    padding-bottom: 94px;
+    background-color: #E5E5E5;
+}
+.members_title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    color: #3C3C3C;
+}
+.members_grid{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 40px;
+}
+.members_card{  
+    background: #FFFFFF;
+    border-radius: 2px;
+} 
+.img_container{
+    width: 100%;
+    height: 171px;
+    position: relative;
+}
+.img_container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card_type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 73px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    background: #DFAD63;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+
+}
+.card_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 19px;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+
+}
+.card_content{
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+}
+.card_author{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3C3C3C;
+}
+.card_title{
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3C3C3C;
+}
+.card_desc{
+    max-width: 214px;
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3C3C3C;
+}
+.card_button{
+    width: 200px;
+    height: 32px;
+    background: #DFAD63;
+    border-radius: 2px;
+    margin-top: 33px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+
+}
+/* members */
+
+/* footer */
+
+.footer{
+    height: var(--footer_height);
+    
+}
+.footer_nav{
+    height: var(--footer_height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav_link{
+    margin-left: 74px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #3C3C3C;
+
+
+}
+.watermark{
+    display: inline;
+    margin-left: 89px;
+    font-size: 12px;
+    line-height: 21px;  
+    text-align: right;
+    letter-spacing: 0.01px;
+    color: #989898;
+}
+/* footer */
